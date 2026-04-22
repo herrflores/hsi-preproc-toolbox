@@ -4,7 +4,7 @@ Reproducible radiometric preprocessing for UAV-borne VNIR hyperspectral imagery 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19699318.svg)](https://doi.org/10.5281/zenodo.19699318)
 
 ## Overview
 
@@ -189,8 +189,8 @@ and the associated paper. See `CITATION.cff` for machine-readable metadata.
   title   = {hsi-preproc-toolbox: Reproducible radiometric preprocessing
              for UAV VNIR hyperspectral imagery in post-mining environments},
   year    = {2026},
-  version = {0.1.0},
-  doi     = {10.5281/zenodo.XXXXXXX},
+  version = {0.1.1},
+  doi     = {10.5281/zenodo.19699319},
   url     = {https://github.com/herrflores/hsi-preproc-toolbox}
 }
 ```

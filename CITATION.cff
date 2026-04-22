@@ -12,11 +12,18 @@ abstract: >-
   heterogeneous post-mining targets including mine waste, mine-affected
   waters, rehabilitating vegetation, and corroded infrastructure.
 type: software
-version: "0.1.0"
-date-released: "2026-04-24"
+version: "0.1.1"
+date-released: "2026-04-22"
 license: MIT
 repository-code: "https://github.com/herrflores/hsi-preproc-toolbox"
-doi: 10.5281/zenodo.XXXXXXX
+doi: 10.5281/zenodo.19699319
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19699318
+    description: "Concept DOI (always resolves to the latest version)"
+  - type: doi
+    value: 10.5281/zenodo.19699319
+    description: "DOI for version 0.1.1"
 contact:
   - email: hernan.flores@thga.de
     family-names: Flores
@@ -61,4 +68,3 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0002-2002-8639"
   journal: "Green and Smart Mining Engineering"
   year: 2026
-  doi: "[PAPER_DOI_WHEN_AVAILABLE]"
