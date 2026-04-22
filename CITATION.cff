@@ -6,22 +6,35 @@ abstract: >-
   preprocessing workflow for UAV-borne VNIR hyperspectral imagery acquired
   in post-mining environments. The workflow formalizes the transformation
   from raw digital numbers to surface reflectance via per-band dark current
-  subtraction, single-panel empirical line calibration, optional
-  Savitzky–Golay smoothing, and integrated quality control. Designed to
-  support multi-temporal monitoring across heterogeneous post-mining
-  targets including mine waste, mine-affected waters, rehabilitating
-  vegetation, and corroded infrastructure.
+  subtraction, single-panel empirical line calibration with a median-based
+  DN estimator, optional Savitzky–Golay smoothing, and integrated quality
+  control. Designed to support multi-temporal monitoring across
+  heterogeneous post-mining targets including mine waste, mine-affected
+  waters, rehabilitating vegetation, and corroded infrastructure.
 type: software
 version: "0.1.0"
 date-released: "2026-04-24"
 license: MIT
 repository-code: "https://github.com/herrflores/hsi-preproc-toolbox"
 doi: 10.5281/zenodo.XXXXXXX
+contact:
+  - email: hernan.flores@thga.de
+    family-names: Flores
+    given-names: Hernán
 authors:
   - family-names: Flores
-    given-names: Hernan
+    given-names: Hernán
+    email: hernan.flores@thga.de
     orcid: "https://orcid.org/0000-0002-9873-9107"
-    affiliation: "Technische Hochschule Georg Agricola (THGA), Research Center of Post-Mining (FZN), Herner Straße 45, 44787 Bochum, Germany"
+    affiliation: "Research Center of Post-Mining (FZN), Technische Hochschule Georg Agricola (THGA), Bochum, Germany; and Department of Mine Surveying and Geodesy, TU Bergakademie Freiberg (TUBAF), Freiberg, Germany"
+  - family-names: Rudolph
+    given-names: Tobias
+    orcid: "https://orcid.org/0000-0003-0113-453X"
+    affiliation: "Research Center of Post-Mining (FZN), Technische Hochschule Georg Agricola (THGA), Bochum, Germany"
+  - family-names: Benndorf
+    given-names: Jörg
+    orcid: "https://orcid.org/0000-0002-2002-8639"
+    affiliation: "Department of Mine Surveying and Geodesy, TU Bergakademie Freiberg (TUBAF), Freiberg, Germany"
 keywords:
   - hyperspectral imaging
   - UAV
@@ -39,6 +52,13 @@ preferred-citation:
   authors:
     - family-names: Flores
       given-names: Hernán
+      orcid: "https://orcid.org/0000-0002-9873-9107"
+    - family-names: Rudolph
+      given-names: Tobias
+      orcid: "https://orcid.org/0000-0003-0113-453X"
+    - family-names: Benndorf
+      given-names: Jörg
+      orcid: "https://orcid.org/0000-0002-2002-8639"
   journal: "Green and Smart Mining Engineering"
   year: 2026
   doi: "[PAPER_DOI_WHEN_AVAILABLE]"

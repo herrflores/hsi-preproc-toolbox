@@ -1,11 +1,21 @@
 {
     "title": "hsi-preproc-toolbox: Reproducible radiometric preprocessing for UAV VNIR hyperspectral imagery in post-mining environments",
-    "description": "<p>An open-source Python toolbox implementing a standardized radiometric preprocessing workflow for UAV-borne VNIR hyperspectral imagery acquired in post-mining environments. The workflow formalizes the transformation from raw digital numbers to surface reflectance via per-band dark current subtraction, single-panel empirical line calibration (50% Spectralon, NIST-traceable), optional Savitzky–Golay smoothing, and integrated quality control (panel saturation screening, hold-out validation, negative-reflectance filtering, spectral-outlier removal).</p><p>Designed to support multi-temporal monitoring across heterogeneous post-mining targets including mine waste, mine-affected waters, rehabilitating vegetation, and corroded infrastructure. Although the reference implementation targets the HAIP BlackBird V2 sensor, the workflow is structured so that it can be adapted to other UAV hyperspectral systems when equivalent calibration inputs and sensor metadata are provided.</p><p>This software accompanies the paper: Flores, H. (2026). Standardizing UAV Hyperspectral Data for Monitoring Post-Mining Environments: A Reproducible Preprocessing Framework. Green and Smart Mining Engineering.</p>",
+    "description": "<p>An open-source Python toolbox implementing a standardized radiometric preprocessing workflow for UAV-borne VNIR hyperspectral imagery acquired in post-mining environments. The workflow formalizes the transformation from raw digital numbers to surface reflectance via per-band dark current subtraction, single-panel empirical line calibration (NIST-traceable 50% Spectralon, median-based DN estimator), optional Savitzky-Golay smoothing, and integrated quality control (panel saturation screening, hold-out validation, negative-reflectance filtering, spectral-outlier removal).</p><p>Designed to support multi-temporal monitoring across heterogeneous post-mining targets including mine waste, mine-affected waters, rehabilitating vegetation, and corroded infrastructure. Although the reference implementation targets the HAIP BlackBird V2 sensor, the workflow is structured so that it can be adapted to other UAV hyperspectral systems when equivalent calibration inputs and sensor metadata are provided.</p><p>This software accompanies the paper: Flores, H., Rudolph, T., Benndorf, J. (2026). Standardizing UAV Hyperspectral Data for Monitoring Post-Mining Environments: A Reproducible Preprocessing Framework. Green and Smart Mining Engineering.</p>",
     "creators": [
         {
-            "name": "Flores, Hernan",
-            "affiliation": "Technische Hochschule Georg Agricola (THGA), Research Center of Post-Mining (FZN), Herner Straße 45, 44787 Bochum, Germany",
+            "name": "Flores, Hernán",
+            "affiliation": "Research Center of Post-Mining (FZN), Technische Hochschule Georg Agricola (THGA), Bochum, Germany; and TU Bergakademie Freiberg (TUBAF), Freiberg, Germany",
             "orcid": "0000-0002-9873-9107"
+        },
+        {
+            "name": "Rudolph, Tobias",
+            "affiliation": "Research Center of Post-Mining (FZN), Technische Hochschule Georg Agricola (THGA), Bochum, Germany",
+            "orcid": "0000-0003-0113-453X"
+        },
+        {
+            "name": "Benndorf, Jörg",
+            "affiliation": "Department of Mine Surveying and Geodesy, TU Bergakademie Freiberg (TUBAF), Freiberg, Germany",
+            "orcid": "0000-0002-2002-8639"
         }
     ],
     "keywords": [

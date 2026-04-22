@@ -10,7 +10,9 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Hernán Flores", email = "hernan.flores@thga.de" }
+    { name = "Hernán Flores", email = "hernan.flores@thga.de" },
+    { name = "Tobias Rudolph" },
+    { name = "Jörg Benndorf" }
 ]
 keywords = [
     "hyperspectral",

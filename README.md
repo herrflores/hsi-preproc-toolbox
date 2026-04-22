@@ -11,9 +11,10 @@ Reproducible radiometric preprocessing for UAV-borne VNIR hyperspectral imagery 
 `hsi-preproc-toolbox` is an open-source Python package that implements the
 standardized preprocessing workflow described in:
 
-> Flores, H. (2026). *Standardizing UAV Hyperspectral Data for Monitoring
-> Post-Mining Environments: A Reproducible Preprocessing Framework.*
-> Green and Smart Mining Engineering. [DOI pending]
+> Flores, H., Rudolph, T., Benndorf, J. (2026). *Standardizing UAV
+> Hyperspectral Data for Monitoring Post-Mining Environments: A
+> Reproducible Preprocessing Framework.* Green and Smart Mining
+> Engineering. [DOI pending]
 
 The toolbox transforms raw UAV VNIR hyperspectral digital numbers into
 reflectance-calibrated hypercubes through a modular, documented, and
@@ -184,7 +185,7 @@ and the associated paper. See `CITATION.cff` for machine-readable metadata.
 
 ```bibtex
 @software{flores_hsi_preproc_toolbox_2026,
-  author  = {Flores, Hernán},
+  author  = {Flores, Hernan and Rudolph, Tobias and Benndorf, Jörg},
   title   = {hsi-preproc-toolbox: Reproducible radiometric preprocessing
              for UAV VNIR hyperspectral imagery in post-mining environments},
   year    = {2026},
