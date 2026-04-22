@@ -201,8 +201,5 @@ MIT — see `LICENSE`.
 
 ## Acknowledgements
 
-Developed as part of ongoing doctoral research on standardized UAV
-hyperspectral monitoring for post-mining environments. Reference datasets
-used to validate the workflow were acquired at Ibbenbüren, Bochum
-(Harpener Teiche area), and Itzenplitz.
+This toolbox supports doctoral research on standardized UAV hyperspectral monitoring for post-mining environments, conducted at THGA Bochum and TUBAF Freiberg. Reference datasets were acquired at post-mining sites in Ibbenbüren, Bochum, and Itzenplitz (Germany).
 "# hsi-preproc-toolbox" 
