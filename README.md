@@ -185,7 +185,7 @@ and the associated paper. See `CITATION.cff` for machine-readable metadata.
 
 ```bibtex
 @software{flores_hsi_preproc_toolbox_2026,
-  author  = {Flores, Hernan and Rudolph, Tobias and Benndorf, Jörg},
+  author  = {Flores, Hernán and Rudolph, Tobias and Benndorf, Jörg},
   title   = {hsi-preproc-toolbox: Reproducible radiometric preprocessing
              for UAV VNIR hyperspectral imagery in post-mining environments},
   year    = {2026},
@@ -202,4 +202,3 @@ MIT — see `LICENSE`.
 ## Acknowledgements
 
 This toolbox supports doctoral research on standardized UAV hyperspectral monitoring for post-mining environments, conducted at THGA Bochum and TUBAF Freiberg. Reference datasets were acquired at post-mining sites in Ibbenbüren, Bochum, and Itzenplitz (Germany).
-"# hsi-preproc-toolbox" 
