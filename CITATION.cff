@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this toolbox, please cite both the software and the associated paper."
+title: "hsi-preproc-toolbox: Reproducible radiometric preprocessing for UAV VNIR hyperspectral imagery in post-mining environments"
+abstract: >-
+  An open-source Python toolbox implementing a standardized radiometric
+  preprocessing workflow for UAV-borne VNIR hyperspectral imagery acquired
+  in post-mining environments. The workflow formalizes the transformation
+  from raw digital numbers to surface reflectance via per-band dark current
+  subtraction, single-panel empirical line calibration, optional
+  Savitzky–Golay smoothing, and integrated quality control. Designed to
+  support multi-temporal monitoring across heterogeneous post-mining
+  targets including mine waste, mine-affected waters, rehabilitating
+  vegetation, and corroded infrastructure.
+type: software
+version: "0.1.0"
+date-released: "2026-04-24"
+license: MIT
+repository-code: "https://github.com/herrflores/hsi-preproc-toolbox"
+doi: 10.5281/zenodo.XXXXXXX
+authors:
+  - family-names: Flores
+    given-names: Hernan
+    orcid: "https://orcid.org/0000-0002-9873-9107"
+    affiliation: "Technische Hochschule Georg Agricola (THGA), Research Center of Post-Mining (FZN), Herner Straße 45, 44787 Bochum, Germany"
+keywords:
+  - hyperspectral imaging
+  - UAV
+  - drone-borne remote sensing
+  - VNIR
+  - radiometric calibration
+  - empirical line calibration
+  - post-mining monitoring
+  - mine waste
+  - acid mine drainage
+  - reproducible research
+preferred-citation:
+  type: article
+  title: "Standardizing UAV Hyperspectral Data for Monitoring Post-Mining Environments: A Reproducible Preprocessing Framework"
+  authors:
+    - family-names: Flores
+      given-names: Hernán
+  journal: "Green and Smart Mining Engineering"
+  year: 2026
+  doi: "[PAPER_DOI_WHEN_AVAILABLE]"

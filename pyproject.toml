@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hsi-preproc-toolbox"
+version = "0.1.0"
+description = "Reproducible radiometric preprocessing for UAV VNIR hyperspectral imagery in post-mining environments"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Hernán Flores", email = "hernan.flores@thga.de" }
+]
+keywords = [
+    "hyperspectral",
+    "UAV",
+    "remote sensing",
+    "post-mining",
+    "radiometric calibration",
+    "empirical line calibration",
+    "reproducible research",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "spectral>=0.23",
+    "rasterio>=1.3",
+    "matplotlib>=3.7",
+    "pyyaml>=6.0",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+notebooks = [
+    "jupyter>=1.0",
+    "ipykernel>=6.25",
+]
+
+[project.urls]
+Homepage = "https://github.com/herrflores/hsi-preproc-toolbox"
+Repository = "https://github.com/herrflores/hsi-preproc-toolbox"
+Issues = "https://github.com/herrflores/hsi-preproc-toolbox/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
