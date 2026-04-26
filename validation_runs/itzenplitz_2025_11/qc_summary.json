@@ -1,0 +1,33 @@
+{
+  "run_id": "itzenplitz_2025_11",
+  "qc_summary_schema_version": "1.0",
+  "validation_method": "panel-based hold-out (70/30 split, random seed 42)",
+  "usable_spectral_range_nm": [
+    520,
+    930
+  ],
+  "panel_pixels": {
+    "n_calibration": 10154,
+    "n_validation": 4353
+  },
+  "validation_metrics_usable_range": {
+    "n_bands_total": 100,
+    "n_bands_usable": 82,
+    "wavelength_range_nm": [
+      522.0,
+      927.0
+    ],
+    "R_squared": 0.9008,
+    "mean_RMSE_pct": 1.0822,
+    "mean_MAE_pct": 0.8585,
+    "mean_bias_pct": 0.0118,
+    "max_RMSE_pct": 1.547,
+    "min_RMSE_pct": 0.9421
+  },
+  "panel_DN_estimator": "median",
+  "panel_DN_negative_clip_count": 0,
+  "panel_saturation_rate_pct": "<1",
+  "spectral_outlier_method": "MAD_first_difference",
+  "spectral_outlier_sigma_threshold": 4.0,
+  "qc_pass": true
+}

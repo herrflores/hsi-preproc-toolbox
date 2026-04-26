@@ -1,0 +1,93 @@
+{
+  "log_schema_version": "1.0",
+  "log_generated_utc": "2026-04-26T08:54:04+00:00",
+  "run_id": "bochum_2025_10",
+  "campaign_metadata": {
+    "campaign": "Bochum",
+    "site": "Harpener Teiche (Harpen ponds)",
+    "country": "Germany",
+    "region": "North Rhine-Westphalia (NRW)",
+    "acquisition_date": "2025-10-10",
+    "local_time": "15:00",
+    "weather": "partly cloudy",
+    "altitude_m_agl": 120,
+    "stand_off_distance_m": null,
+    "acquisition_mode": "nadir hover (auto-nadir 90°)",
+    "integration_time_us": 4500,
+    "gain_setting": 50,
+    "gain_factor_x": 5.0,
+    "dark_frames_acquired": 2,
+    "dark_frames_used": 1,
+    "target_class": "mine-water inflow + pond (single calibration applied to two targets)"
+  },
+  "software": {
+    "toolbox_name": "hsi-preproc-toolbox",
+    "version": "0.1.2",
+    "concept_doi": "10.5281/zenodo.19699318",
+    "license": "MIT",
+    "repository": "https://github.com/herrflores/hsi-preproc-toolbox",
+    "python_min_version": "3.10",
+    "key_dependencies": [
+      "numpy>=1.24",
+      "pandas>=2.0",
+      "scipy>=1.10",
+      "scikit-learn>=1.3"
+    ]
+  },
+  "preprocessing_parameters": {
+    "dark_subtraction": {
+      "method": "spatial_mean_per_band",
+      "frames_used": 1,
+      "frames_total_acquired": 2,
+      "intermediate_clipping": false
+    },
+    "empirical_line_calibration": {
+      "method": "single_panel_reduced_ELC",
+      "panel_reflectance_target_pct": 50.0,
+      "panel_manufacturer": "Labsphere",
+      "panel_model": "Spectralon SRT-50-100",
+      "panel_traceability": "NIST-traceable diffuse reflectance reference",
+      "offset_term_b_lambda": "fixed_to_zero_after_dark_subtraction",
+      "panel_DN_estimator": "median",
+      "ROI_protocol": "conservative_interior_polygon",
+      "ROI_outermost_excluded_pct": "10-15"
+    },
+    "savitzky_golay_smoothing": {
+      "applied": false,
+      "note": "smoothing not applied to validation outputs reported in this log; applied only to spectra shown in Figures 7 and 10 of the manuscript",
+      "default_window_length_bands": 11,
+      "default_polyorder": 3
+    },
+    "quality_control": {
+      "saturation_avoidance": "operator-in-the-loop, 40-80% dynamic range target",
+      "negative_reflectance_handling": "clip_to_zero",
+      "spectral_outlier_method": "MAD_first_difference",
+      "spectral_outlier_sigma": 4.0,
+      "validation_split_ratio": "70/30",
+      "validation_random_seed": 42,
+      "validation_spectral_range_nm": [
+        520,
+        930
+      ]
+    }
+  },
+  "input_file_checksums": {
+    "panel_validation_metrics_per_band.csv": {
+      "sha256": "425549da6b2c32a46d0198cc09ece7ac8c96cd32a1f5da33de9ab817a172da3b",
+      "size_bytes": 11370
+    }
+  },
+  "data_provenance": {
+    "raw_HSI_data_distribution": "not redistributed (size and site-access constraints)",
+    "processed_outputs_availability": "available from corresponding author upon reasonable request",
+    "panel_validation_metrics_published": true,
+    "panel_validation_metrics_format": "per-band CSV with reference reflectance, validation mean/std, RMSE, MAE, and bias"
+  },
+  "notes": [
+    "This log documents the panel-based hold-out validation run for the campaign.",
+    "Per-band metrics are stored alongside this log in panel_validation_metrics_per_band.csv.",
+    "Aggregated summary metrics are stored in qc_summary.json (same directory).",
+    "Reference panel reflectance was provided by the manufacturer's calibration certificate.",
+    "Per-pixel n values (calibration / validation) reported in qc_summary.json are scene-specific."
+  ]
+}
